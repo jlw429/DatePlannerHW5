@@ -87,4 +87,12 @@ textarea{
 }
 form {
   font-family: 'Montserrat', sans-serif;
+  
+ 
+}
+.btn {
+  align-items: center;
+  position: relative;
+  left: 20%;
+
 }
