@@ -33,8 +33,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input8').append(userData);
       console.log(userText);
-      localStorage.setItem('8AM', userText);
-      localStorage.getItem('8AM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '8',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
     $('#save9').on('click', function (event) {
       event.preventDefault();
@@ -42,8 +47,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input9').append(userData);
       console.log(userText);
-      localStorage.setItem('9AM', userText);
-      localStorage.getItem('9AM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '9',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save10').on('click', function (event) {
@@ -52,8 +62,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input10').append(userData);
       console.log(userText);
-      localStorage.setItem('10AM', userText);
-      localStorage.getItem('10AM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '10',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save11').on('click', function (event) {
@@ -62,8 +77,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input11').append(userData);
       console.log(userText);
-      localStorage.setItem('11AM', userText);
-      localStorage.getItem('11AM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '11',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save12').on('click', function (event) {
@@ -72,8 +92,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input12').append(userData);
       console.log(userText);
-      localStorage.setItem('12PM', userText);
-      localStorage.getItem('12PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '12',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save13').on('click', function (event) {
@@ -82,8 +107,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input13').append(userData);
       console.log(userText);
-      localStorage.setItem('1 PM', userText);
-      localStorage.getItem('1 PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '13',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save14').on('click', function (event) {
@@ -92,8 +122,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input14').append(userData);
       console.log(userText);
-      localStorage.setItem('2 PM', userText);
-      localStorage.getItem('2 PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '14',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save15').on('click', function (event) {
@@ -102,8 +137,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input15').append(userData);
       console.log(userText);
-      localStorage.setItem('3 PM', userText);
-      localStorage.getItem('3 PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '15',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save16').on('click', function (event) {
@@ -112,8 +152,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input16').append(userData);
       console.log(userText);
-      localStorage.setItem('4 PM', userText);
-      localStorage.getItem('4 PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '16',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
 
     $('#save17').on('click', function (event) {
@@ -122,8 +167,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input17').append(userData);
       console.log(userText);
-      localStorage.setItem('5 PM', userText);
-      localStorage.getItem('5 PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '17',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
     $('#save18').on('click', function (event) {
       event.preventDefault();
@@ -131,8 +181,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input18').append(userData);
       console.log(userText);
-      localStorage.setItem('6 PM', userText);
-      localStorage.getItem('6 PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '18',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
     $('#save19').on('click', function (event) {
       event.preventDefault();
@@ -140,8 +195,13 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input19').append(userData);
       console.log(userText);
-      localStorage.setItem('7 PM', userText);
-      localStorage.getItem('7 PM');
+      var data = JSON.parse(localStorage.getItem('Notes')) || [];
+      var n = {
+        time: '19',
+        note: userText,
+      };
+      data.push(n);
+      localStorage.setItem('Notes', JSON.stringify(data));
     });
   }
   saveUserData();
@@ -149,7 +209,7 @@ $(document).ready(function () {
   //timeRendering();
 
   //time rendering
-  $('.note-row').each(function () {
+  $(".note-row").each(function () {
     let currentTime = moment().hour();
 
     let blockHour = $(this).attr('id');
@@ -166,13 +226,9 @@ $(document).ready(function () {
       $(this).addClass('future');
     }
 
-    // if (currentTime >= 7 && currentTime < 8) {
-    //   $('#7a, #7ab, #user-input7, #save7').css('background-color', 'lime');
-    // } else if (currentTime >= 14 && currentTime < 15) {
-    //   $('#7a, #7ab, #user-input7, #save7').css('background-color', 'purple');
-    //   $('#8a, #8ab, #user-input8, #save8').css('background-color', 'lime');
-    // }
   });
+
+
 
   function dispData() {
     var data = JSON.parse(localStorage.getItem('Notes')) || [];
