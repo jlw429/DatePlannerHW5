@@ -11,4 +11,4 @@ Everything works correctly and all instructions were completed.
 ### Screenshots
 
 Index Page
-![Index Page]()
+![Index Page](https://github.com/jlw429/DatePlannerHW5/blob/main/Assets/screenshotindex.png)
