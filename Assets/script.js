@@ -1,17 +1,7 @@
-// let plannerData = [];
-
 $(document).ready(function () {
   //Active time, date.
   $('.lead').text(moment().format('MMM Do YY'));
-
-  // function callUserData() {
-  //     const seven = localStorage.getItem("7AM");
-  //     $("#user-input7").innertext(seven);
-
-  // }
-
-  //  callUserData();
-
+  //local storage
   function saveUserData() {
     $('#save7').on('click', function (event) {
       event.preventDefault();
@@ -19,6 +9,7 @@ $(document).ready(function () {
       let userData = $('<p>' + userText + '</p>');
       $('#user-input7').append(userData);
       console.log(userText);
+      //used an array to retreive the local storage. One for "time", one for the note."Worked well. Took me a couple lifelines to get this right.
       var data = JSON.parse(localStorage.getItem('Notes')) || [];
       var n = {
         time: '7',
@@ -205,10 +196,7 @@ $(document).ready(function () {
     });
   }
   saveUserData();
-  // getUserData();
-  //timeRendering();
-
-  //time rendering
+  // The time, Jquery saved alot of time. The add and remove class did well for me!
   $(".note-row").each(function () {
     let currentTime = moment().hour();
 
@@ -227,9 +215,7 @@ $(document).ready(function () {
     }
 
   });
-
-
-
+//function name explains itself.
   function dispData() {
     var data = JSON.parse(localStorage.getItem('Notes')) || [];
 
@@ -241,23 +227,4 @@ $(document).ready(function () {
 
   dispData();
 
-  //Saving to local storage. The form conrol class changes to a string where it can be shipped to local storage
-  // $('button').click(function() {
-  //     $('.form-control').html('user-data');
-  //     localStorage.content = $('form-control').html();
-  //     $('.form-control').html(localStorage.content);
-  // })
-
-  //Time Block
-
-  // let currentTime= moment().hour();
-  // // if #blockTime < currentTime
-  // if $("#blockTime" < currentTime)
-
-  // css turn cells light grey.
-
-  // current hour highlighted lime
-
-  // if #blockTime > currentTime
-  //css turn cells green
 });

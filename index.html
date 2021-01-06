@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Added Google Fonts-->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,9 @@
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead"></p>
   </header>
-  <div class="container">
+  <!--Used Bootstraps 3 column and row. Disappointing because I wanted to shrink the area between the button and the time. I also overachieved, coming from retail, I went from 7 to 7 ha.-->
+  <main class="container">
+  <!-- Used note-row class to color the areas in styling. The id is for the local storage-->
     <div class="row mt-5 note-row" id="7">
       <div id="7a" class="col-2 mt-3 clockstyle">
         7-8A
@@ -190,9 +192,9 @@
         <button type="button" class="btn btn-outline-dark btn-lg">Save</button>
       </div>
     </div>
-  </div>
+  </main>
 </body>
-
+<!--Kept with moment.js-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
   integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
